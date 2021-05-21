@@ -32,10 +32,8 @@
 </template>
 
 <script>
-import draggable from '@/directive/draggable'
 export default {
-  name: 'DialogDraggable',
-  directives: { draggable }
+  name: 'DialogDraggable'
 }
 </script>
 

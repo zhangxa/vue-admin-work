@@ -16,12 +16,9 @@ import * as eCharts from 'echarts'
 
 import styleVariables from '@/styles/variables.scss'
 
-import permission from '@/directive/permission'
-
 import { opened } from '../../package.json'
 
 Vue.use(Element)
-Vue.use(permission)
 
 function initDevice() {
   const width = document.body.clientWidth

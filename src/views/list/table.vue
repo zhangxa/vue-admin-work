@@ -186,11 +186,9 @@ import {
 import SingleUpload from '@/components/common/SingleUpload.vue'
 import BaseForm from '@/components/common/BaseForm.vue'
 import { formBuilder } from '@/utils/form'
-import draggable from '@/directive/draggable'
 export default {
   name: 'Table',
   components: { SingleUpload, BaseForm },
-  directives: { draggable },
   mixins: [
     TableMixin,
     PageModelMixin,
@@ -404,8 +402,8 @@ export default {
           this.dataList = this.dataList.filter((it) => !tempIds.includes(it.id))
         })
       },
-      onResult: () => { },
-      onError: () => { }
+      onResult: () => {},
+      onError: () => {}
     })
   },
   methods: {
