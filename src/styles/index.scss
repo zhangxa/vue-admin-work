@@ -1,0 +1,70 @@
+// @import "./element-variables.scss";
+@import "./normalize.scss";
+@import "./variables.scss";
+@import "./transition.scss";
+@import "./table.scss";
+@import "./theme.scss";
+@import "./main.css";
+@import "./anim.css";
+
+#nprogress {
+  .bar {
+    background-color: #48d8e3;
+    height: 3px;
+  }
+}
+
+.scrollbar-wrapper {
+  overflow-x: hidden !important;
+}
+
+.el-menu {
+  width: 100% !important;
+  height: 100%;
+  border: none !important;
+}
+
+.hiden-side-bar {
+  // set side bar width is 54px
+  width: 54px !important;
+  .el-submenu__icon-arrow {
+    display: none;
+  }
+  .item-title {
+    display: none;
+  }
+}
+
+.show-side-bar {
+  .el-submenu__icon-arrow {
+    display: inline;
+  }
+  .item-title {
+    display: inline-block;
+  }
+}
+
+.el-scrollbar {
+  height: calc(100% - 50px) !important;
+  overflow: hidden;
+}
+
+// main-app class
+.main-container {
+  box-sizing: border-box;
+  position: relative;
+  padding: $mainPadding;
+  padding-top: calc(#{$mainPadding} + 5px);
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.overflow-y-scroll {
+  overflow-y: scroll;
+}
+
+.el-link + .el-link {
+  margin-left: 10px;
+}
