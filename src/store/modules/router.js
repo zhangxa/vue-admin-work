@@ -152,7 +152,7 @@ const mutations = {
     if (selectIndex !== -1) {
       state.cachedRoute = state.cachedRoute.filter((it, index) => {
         return it.meta.affix || index >= selectIndex
-      }).map(it => it.name)
+      }).map(it => toHump(it.name))
     }
   },
   REMOVE_CACHE_RIGHT_ROUTE(state, route) {
@@ -160,7 +160,7 @@ const mutations = {
     if (selectIndex !== -1) {
       state.cachedRoute = state.cachedRoute.filter((it, index) => {
         return it.meta.affix || index <= selectIndex
-      }).map(it => it.name)
+      }).map(it => toHump(it.name))
     }
   },
   REMOVE_ALL_CACHE_ROUTE() {
