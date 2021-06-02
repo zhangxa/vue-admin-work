@@ -4,7 +4,8 @@ function resolve(dir) {
   return path.join(__dirname, dir)
 }
 module.exports = {
-  publicPath: process.env.NODE_ENV === 'development' ? '/' : '/vue-admin-work',
+  // publicPath: process.env.NODE_ENV === 'development' ? '/' : '/vue-admin-work',
+  publicPath: '/dist',
   outputDir: 'dist',
   assetsDir: 'static',
   lintOnSave: true,
